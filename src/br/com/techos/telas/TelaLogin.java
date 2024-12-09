@@ -18,7 +18,7 @@ public class TelaLogin extends javax.swing.JFrame {
     //o codigo abaixo cria o metodo logar
     public void logar(){
         //busca no banco o login e senha cadastrados. as "?" serão subtituidas pelo conteudo das variaveis inseridas pelo usuario
-        String sql = "SELECT * FROM ciuser WHERE login= ? and senha= ?";
+        String sql = "SELECT * FROM ciuser WHERE login=? and senha=?";
         try {
             //as linhas abaixo prepara a consilta ao banco em função do que foi digitado nas caixas de texto
             pst = conexao.prepareStatement(sql);
@@ -32,7 +32,7 @@ public class TelaLogin extends javax.swing.JFrame {
             //se e caso existir usuario correspondente
             if (rs.next()) {
                 //a linha abaixo obtem o conteudo do campo perfil da tabela ciuser
-                String perfil = rs.getString(6);
+                String perfil = rs.getString(5);
                 System.out.println(perfil);
                 
                 //a estrutura abaixo faz o tratamento do perfil usuario

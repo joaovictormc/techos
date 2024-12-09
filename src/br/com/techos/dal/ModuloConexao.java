@@ -44,7 +44,7 @@ public class ModuloConexao {
         /*String url = "jdbc:mysql://192.168.5.101:3306/dbcitech?characterEncoding=utf-8";
         String user = "dba";
         String password = "Jvmacielc08";*/
-        String url = "jdbc:mysql://localhost:3306/dbcitech";
+        String url = "jdbc:mysql://localhost:3307/dbcitech";
         String user = "root";
         String password = "joaovmc98";
         //estabeleendo a onexao com o banco
